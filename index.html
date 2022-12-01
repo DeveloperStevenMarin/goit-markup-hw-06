@@ -541,6 +541,15 @@
           </li>
         </ul>
       </article>
+      <div class="subscribe-container">
+        <form action="">
+          <div class="subscribe-container-form">
+            <label for="subscribe-email">SUSCRÍBASE al boletín informativo.</label>
+            <input type="email" name="subscribe-email" id="subscribe-email"placeholder="Correo electrónico" />
+          </div>
+        <button type="submit">Suscríbase<svg><use href="images/icons.svg#telegram"></use></svg></button>
+        </form>
+      </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -553,38 +562,48 @@
         <h2 class="form-title">Deje sus datos, nos contactaremos con usted</h2>
         <form action="" name="Contact information by user" class="contact-form">
           <div class="custom-input">
-            <label for="" class="label-form">Nombre</label>
+            <label for="user" class="label-form">Nombre</label>
             <svg>
               <use href="images/icons.svg#user"></use>
             </svg>
-            <input type="text" name="User name" id="" />
+            <input id="user" type="text" name="User name" />
           </div>
           <div class="custom-input">
-            <label for="" class="label-form">Teléfono</label>
+            <label for="phone" class="label-form">Teléfono</label>
             <svg>
               <use href="images/icons.svg#phone-form"></use>
             </svg>
-            <input type="tel" name="User phone" id="" />
+            <input id="phone" type="tel" name="User phone" />
           </div>
           <div class="custom-input">
-            <label for="" class="label-form">E-mail</label>
+            <label for="email" class="label-form">E-mail</label>
             <svg>
               <use href="images/icons.svg#mail-form"></use>
             </svg>
-            <input type="email" name="User mail" id="" />
+            <input id="email" type="email" name="User mail" />
           </div>
           <div class="custom-input feedback">
-            <label for="" class="label-form">Comentarios</label>
-            <textarea class="form-text-area"name="" id="" cols="30" rows="10" placeholder="Introduzca el texto"></textarea>
+            <label for="feedback" class="label-form">Comentarios</label>
+            <textarea
+              class="form-text-area"
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+              placeholder="Introduzca el texto"
+            ></textarea>
           </div>
           <div class="terms-conditions-container">
-            <input type="checkbox" />
-            <label for="" class="label-form terms-conditions"
+            <input
+              id="terms-conditions"
+              type="checkbox"
+              name="terms-conditions"
+            />
+            <label for="terms-conditions" class="label-form terms-conditions"
               >Estoy de acuerdo con el boletín informativo y acepto los Términos
               y Condiciones.</label
             >
           </div>
-
           <button type="submit" class="submit-button">Enviar</button>
         </form>
       </div>
